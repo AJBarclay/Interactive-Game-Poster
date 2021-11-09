@@ -4,6 +4,7 @@ let lat = 0;
 function preload() {
   Odin = loadFont('assets/Odin Rounded - Bold.otf');
   earth = loadImage('assets/EarthHD.png');
+  atmos = loadImage('assets/atmosphere.png');
   cousin = loadImage('assets/cousin.gif');
   katamari = loadImage('assets/Katamari.png'); 
   
@@ -84,6 +85,8 @@ function draw() {
   translate(windowWidth-(earth.width/2),windowHeight-(earth.height *1)/3);
   rotate((PI/2) * (lat/24));
   earthImage = image(earth, 0,0);
+  rotate(-((PI/2) * (lat/24))*2);
+  atmosImage = image(atmos, 0,0);
   pop();
   
   if(!lrs1.isPlaying()){
