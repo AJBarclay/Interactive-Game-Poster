@@ -82,7 +82,7 @@ function draw() {
   push();
   imageMode(CENTER);
   translate(windowWidth-(earth.width/2),windowHeight-(earth.height *1)/3);
-  rotate((PI/2) * (lat/18));
+  rotate((PI/2) * (lat/24));
   earthImage = image(earth, 0,0);
   pop();
   
